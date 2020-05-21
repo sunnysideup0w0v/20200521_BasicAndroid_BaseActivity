@@ -1,0 +1,2 @@
+rootProject.name='20200521_BasicAndroid_BaseActivity'
+include ':app'
