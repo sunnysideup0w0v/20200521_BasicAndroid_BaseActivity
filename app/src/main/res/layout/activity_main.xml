@@ -6,6 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="50dp"
+        android:gravity="center"
         tools:context=".MainActivity">
 
         <EditText
@@ -14,10 +16,18 @@
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:hint="이름을 입력하세요"/>
-        <Button
-            android:id="@+id/okBtn"
+        <EditText
+            android:id="@+id/birthEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="다른 화면에서 이름 확인"/>
+            android:inputType="number"
+            android:hint="생년을 입력하세요(Ex: 1998)"/>
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다른 화면에서 입력한 이름/나이 확인"/>
     </LinearLayout>
 </layout>
