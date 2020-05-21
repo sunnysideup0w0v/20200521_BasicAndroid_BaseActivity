@@ -2,19 +2,16 @@ package com.example.a20200521_basicandroid_baseactivity;
 
 import android.os.Bundle;
 
-import androidx.databinding.DataBindingUtil;
+public class UserInfoActivity extends BaseActivity {
 
-import com.example.a20200521_basicandroid_baseactivity.databinding.ActivityMainBinding;
-
-public class MainActivity extends BaseActivity {
-    ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
-
-
+        setContentView(R.layout.activity_user_info);
+        setupData();
+        setValues();
     }
+
     @Override
     public void setupData() {
 

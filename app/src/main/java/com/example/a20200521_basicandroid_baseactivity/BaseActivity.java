@@ -1,4 +1,8 @@
 package com.example.a20200521_basicandroid_baseactivity;
 
-public abstract class BaseActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public abstract class BaseActivity extends AppCompatActivity {
+    public abstract void setupData();
+    public abstract void setValues();
 }
