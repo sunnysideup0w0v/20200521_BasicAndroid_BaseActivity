@@ -1,8 +1,11 @@
 package com.example.a20200521_basicandroid_baseactivity;
 
+import android.content.Context;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
-    public abstract void setupData();
+    public Context mContext = this;
+    public abstract void setupEvents();
     public abstract void setValues();
 }
